@@ -1,0 +1,157 @@
+$blue:    #003d99;
+$indigo:  #6610f2;
+$darkblue: #090754;
+$purple:  #6f42c1;
+$darkpurple: #33024a;
+$pink:    #d63384;
+$red:     #8e000e;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #198754;
+$teal:    #20c997;
+$cyan:    #0dcaf0;
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+$primary:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-900;
+
+$logo-primary: #10881a;
+$logo-secondary: #000000;
+$logo-teri: #000000;
+
+@mixin gradient-x($start-color: $gray-700, $end-color: $gray-800, $start-percent: 0%, $end-percent: 100%) {
+  background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
+}
+
+@mixin gradient-y($start-color: $gray-700, $end-color: $gray-800, $start-percent: null, $end-percent: null) {
+  background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent);
+}
+
+@mixin gradient-directional($start-color: $gray-700, $end-color: $gray-800, $deg: 45deg) {
+  background-image: linear-gradient($deg, $start-color, $end-color);
+}
+
+@mixin gradient-x-three-colors($start-color: $darkblue, $mid-color: $blue, $color-stop: 50%, $end-color: $darkblue) {
+  background-image: linear-gradient(to right, $start-color, $mid-color $color-stop, $end-color);
+}
+
+@mixin gradient-y-three-colors($start-color: $logo-teri, $mid-color: $logo-primary, $color-stop: 50%, $end-color: $logo-secondary) {
+  background-image: linear-gradient($start-color, $mid-color $color-stop, $end-color);
+}
+
+@mixin solid-color($start-color: $logo-primary, $end-color: $logo-primary, $start-percent: 0%, $end-percent: 100%) {
+  background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
+}
+
+#body_gradient {
+  @include gradient-x-three-colors;
+}
+
+#breathing_room {
+  padding-top: 10%;
+}
+
+#main_container {
+  background-color: #000;
+  color: #b0b0b0;
+}
+
+#nav-text {
+  font-size: larger;
+  margin-top: 3.5%;
+}
+
+#link {
+  color: #b2b2b2;
+  text-decoration: none;
+}
+
+#link:hover {
+  color: #864da0;
+}
+
+#active_link {
+  color: #955cff;
+  text-decoration: none;
+}
+
+#active_link:hover {
+  color: #7143c6;
+}
+
+#name {
+  font-family:'Times New Roman', Times, serif;
+  margin-left: 5%;
+  margin-bottom: 0%;
+}
+
+#subname {
+  margin-left: 25%;
+  margin-bottom: 3%;
+}
+
+#index_img {
+  width: 100%;
+  height: 100%;
+}
+
+#book_img {
+ margin-top: 0%;
+ margin-left: 40%;
+ width: 50%;
+}
+
+#right_book_img {
+  margin-top: 0%;
+  margin-left: 0%;
+  width: 50%;
+}
+
+#page_img {
+  margin-top: 0%;
+}
+
+#book_title {
+  margin-top: 10%;
+  font-family: 'Times New Roman', Times, serif;
+  color: #955cff;
+}
+
+#instagram {
+  width: 3.7%;
+  height: 3.7%;
+  margin: 1%;
+}
+
+#facebook{
+  width: 4.5%;
+  height: 4.5%;
+  margin: 1%;
+}
+
+#page_title {
+  font-family: 'Times New Roman', Times, serif;
+  color: #955cff;
+  margin-left: 3%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+#page_header {
+  color: #955cff;
+}
